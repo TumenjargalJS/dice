@@ -58,7 +58,7 @@ document.querySelector(".btn-hold").addEventListener("click", function(){
          // ул тоглогчийн ээлжийн оноог глоболь онооон дээр нэмж өгнө
         scores[activePlayer] = scores[activePlayer] + roundScore;
         document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
-        if(scores[activePlayer] >= 20){
+        if(scores[activePlayer] >= 100){
             isNewGame = false;
             document.getElementById('name-' + activePlayer).textContent = 'winner';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
